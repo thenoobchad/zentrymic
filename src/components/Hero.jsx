@@ -19,7 +19,7 @@ export default function Hero() {
     const [isLoading, setIsLoading] = useState(true)
     const [loadedVideos, setLoadedVideos] = useState(0)
 
-    const totalVideos = 3;
+    const totalVideos = 4;
 
     const nextVideoRef = useRef(null)
 
@@ -37,7 +37,7 @@ export default function Hero() {
 
 
 useEffect(()=>{
-    if(loadedVideos === totalVideos - 1) {
+    if(loadedVideos === totalVideos - 2) {
         setIsLoading(false)
     }
 }, [loadedVideos])
@@ -133,6 +133,7 @@ useEffect(()=>{
                 autoPlay
                 loop
                 muted
+
                 className="absolute left-0 top-0  size-full object-cover object-center"
                 />
             </div>
