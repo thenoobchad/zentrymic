@@ -1,7 +1,10 @@
 import About from "./components/About";
+import Contact from "./components/Contact";
 import Features from "./components/Features";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Nabvbar from "./components/Navbar";
+import Story from "./components/Story";
 
 
 export default function App() {
@@ -12,6 +15,9 @@ export default function App() {
 
       <About />
       <Features />
+      <Story />
+      <Contact/>
+      <Footer/>
     </main>
   )
 }
